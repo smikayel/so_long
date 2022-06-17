@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "mlx.h": "c",
+        "so_long.h": "c",
+        "keys.h": "c",
+        "stdio.h": "c"
+    }
+}
