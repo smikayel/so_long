@@ -18,6 +18,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include "keys.h"
+# include "libftprintf.h"
 
 # define DOOR_PATH "./Models/door.xpm"
 # define CHEAS_PATH "./Models/scores/cheas.xpm"

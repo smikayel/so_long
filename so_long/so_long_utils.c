@@ -6,7 +6,7 @@
 /*   By: smikayel <smikayel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:41:07 by smikayel          #+#    #+#             */
-/*   Updated: 2022/06/06 15:30:08 by smikayel         ###   ########.fr       */
+/*   Updated: 2022/07/26 17:41:42 by smikayel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,8 @@ int	close_game(int keycode, t_player *player)
 void	finish(int isenemy)
 {
 	if (!isenemy)
-		printf(">>>>you win!<<<<\nGame over!");
+		ft_printf("%s", ">>>>you win!<<<<\nGame over!");
 	else
-		printf(">>>>You lose!<<<<\nGame over!");
+		ft_printf("%s", ">>>>You lose!<<<<\nGame over!");
 	exit(0);
 }

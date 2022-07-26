@@ -6,7 +6,7 @@
 /*   By: smikayel <smikayel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/06 12:40:33 by smikayel          #+#    #+#             */
-/*   Updated: 2022/06/06 15:28:26 by smikayel         ###   ########.fr       */
+/*   Updated: 2022/07/26 19:09:28 by smikayel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	moveup(char **map, t_player *player)
 
 	j = player->x;
 	i = player->y;
-	printf("You maked:%d steps\n", player->steps);
 	if (map[i - 1][j] && map[i - 1][j] != '1' && e(map[i - 1][j]))
 	{
 		if (map[i - 1][j] == 'C')
@@ -45,6 +44,7 @@ void	moveup(char **map, t_player *player)
 			map[i][j] = '0';
 		--player->y;
 		player->steps++;
+		ft_printf("You maked:%d steps\n", player->steps);
 	}
 }
 
@@ -55,7 +55,6 @@ void	movedown(char **map, t_player *player)
 
 	j = player->x;
 	i = player->y;
-	printf("You maked:%d steps\n", player->steps);
 	if (map[i + 1][j] && map[i + 1][j] != '1' && e(map[i + 1][j]))
 	{
 		if (map[i + 1][j] == 'C')
@@ -74,6 +73,7 @@ void	movedown(char **map, t_player *player)
 			map[i][j] = '0';
 		++player->y;
 		player->steps++;
+		ft_printf("You maked:%d steps\n", player->steps);
 	}
 }
 
@@ -84,7 +84,6 @@ void	moveright(char **map, t_player *player)
 
 	j = player->x;
 	i = player->y;
-	printf("You maked:%d steps\n", player->steps);
 	if (map[i][j + 1] && map[i][j + 1] != '1' && e(map[i][j + 1]))
 	{
 		if (map[i][j + 1] == 'C')
@@ -103,6 +102,7 @@ void	moveright(char **map, t_player *player)
 			map[i][j] = '0';
 		++player->x;
 		player->steps++;
+		ft_printf("You maked:%d steps\n", player->steps);
 	}
 }
 
@@ -113,7 +113,6 @@ void	moveleft(char **map, t_player *player)
 
 	j = player->x;
 	i = player->y;
-	printf("You maked:%d steps\n", player->steps);
 	if (map[i][j - 1] && map[i][j -1] != '1' && e(map[i][j - 1]))
 	{
 		if (map[i][j - 1] == 'C')
@@ -132,5 +131,6 @@ void	moveleft(char **map, t_player *player)
 			map[i][j] = '0';
 		--player->x;
 		player->steps++;
+		ft_printf("You maked:%d steps\n", player->steps);
 	}
 }
